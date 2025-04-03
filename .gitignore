@@ -17,6 +17,13 @@
 /.next/
 /out/
 
+# convex
+/convex/.generated
+/convex/_generated
+
+# vscode (uncommented to preserve our prettier settings)
+# .vscode
+
 # production
 /build
 
@@ -31,7 +38,12 @@ yarn-error.log*
 .pnpm-debug.log*
 
 # env files (can opt-in for committing if needed)
-.env*
+.env
+.env.*
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
 
 # vercel
 .vercel
@@ -39,3 +51,13 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# turbo
+.turbo
+
+# cache
+.cache/
+
+# logs
+logs
+*.log
