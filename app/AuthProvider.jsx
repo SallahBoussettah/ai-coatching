@@ -11,7 +11,6 @@ function AuthProvider({ children }) {
   const [userData, setUserData] = useState();
 
   useEffect(() => {
-    console.log(user);
     user && CreateNewUser();
   }, [user]);
 
@@ -20,7 +19,6 @@ function AuthProvider({ children }) {
       name: user?.displayName,
       email: user.primaryEmail,
     });
-    console.log(result);
     setUserData(result);
   };
 
